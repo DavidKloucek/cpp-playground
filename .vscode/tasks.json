@@ -1,0 +1,19 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build and run C++ project",
+            "command": "clear & /usr/bin/clang++ -I ${workspaceFolder} -g ${workspaceFolder}/src/main.cpp -o ../output/main -stdlib=libc++ -std=c++20 && ../output/main",
+            "args": [],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Compile and run C++"
+        }
+    ],
+    "version": "2.0.0"
+}

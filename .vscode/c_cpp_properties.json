@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/boost",
+                "${workspaceFolder}/boost/**",
+                "${workspaceFolder}/libs/**"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "macos-clang-arm64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/src/**",
+                    "${workspaceFolder}/libs/**",
+                    "${workspaceFolder}/boost/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
