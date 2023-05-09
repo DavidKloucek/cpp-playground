@@ -263,5 +263,24 @@ namespace DavidKloucek::Exceptions
         {
             cerr << ex.what() << endl;
         }
+
+        try
+        {
+            throw 123;
+            throw "Error";
+            throw std::string("the other string");
+        }
+        catch (const int &ex)
+        {
+            std::cout << "int: " << ex << std::endl;
+        }
+        catch (const char *&ex)
+        {
+            std::cout << "string" << std::endl;
+        }
+        catch (...)
+        {
+            std::cout << "other" << std::endl;
+        }
     }
 }
